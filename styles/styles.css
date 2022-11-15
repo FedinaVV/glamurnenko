@@ -1,0 +1,615 @@
+@import "reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+
+body {
+    color: #ffffff;
+    font-family: 'Roboto' !important;
+    font-weight: 500;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+._ibg {
+    position: relative;
+}
+
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+/*-------header-------*/
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.header__container {
+    font-family: 'Oranienbaum', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 110px;
+    color: #ffffff;
+}
+
+.menu__list {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.menu__item:not(:last-child) {
+    margin: 0 25px 0 0;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.menu__link {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.menu__link:hover {
+    color: #ffffff;
+    text-decoration: underline!important;
+}
+
+.header__phone {
+    padding-right: 1rem;
+}
+
+.header__phone-first, .header__phone-second {
+    margin-bottom: 0;
+}
+
+/*-------header-------*/
+
+.main {
+    flex: 1 1 auto;
+}
+
+.main__wrapper {
+    position: relative;
+}
+
+
+.main__content {
+    position: relative;
+    padding: 223px 0 277px 15px;
+    z-index: 2;
+}
+
+.main__logo {
+    margin-bottom: 45px;
+}
+
+.main__logo img {
+    height: 200px;
+}
+
+.main__mission p {
+    font-family: 'Oranienbaum', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.main__mission span {
+    font-size: 18px;
+    color: #c0ad82;
+    text-decoration: underline;
+}
+
+.main__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/*-----block help-------*/
+
+.help {
+    position: relative;
+}
+
+.help:before {
+    content: 'Новинка';
+    color: #ffffff;
+    position: absolute;
+    left: -65px;
+    top: 68px;
+    height: 30px;
+    width: 270px;
+    background-color: #ff0c3a;
+    text-align: center;
+    transform: rotate(-45deg);
+    overflow: hidden;
+    box-shadow: 0 6px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.help__wrapperBox {
+    max-width: 800px;
+    padding: 65px 0 20px;
+    margin: 0 auto;
+    color: #565656;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.help__title {
+    font-family: 'Oranienbaum', sans-serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.help__description {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+/*-----block help-------*/
+
+/*--------block consultant---------*/
+
+.consultant__img img {
+    width: 100%;
+}
+
+.consultant__img figcaption {
+    font-size: 16px;
+    text-align: center;
+    color: #9f9f9f;
+    margin-top: 5px;
+}
+
+/*--------block consultant---------*/
+
+/*------block instruction--------*/
+
+.instruction {
+    margin-top: 35px;
+}
+
+.instruction__wrapper {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.instruction__title {
+    font-family: 'Oranienbaum', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.instruction__text {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.instruction__wrapper-weekend {
+    max-width: 577px;
+    margin: 0 auto;
+}
+
+/*------block instruction--------*/
+
+/*----------block register with table--------*/
+
+.register {
+    margin-top: 40px;
+}
+
+.register__title {
+    font-family: 'Oranienbaum', sans-serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.register__table-wrapper {
+    max-width: 710px;
+    margin: 0 auto;
+}
+
+.register__table {
+    background-color: #fff000 !important;
+}
+
+.table__header {
+    font-size: 16px;
+    background-color: #ffd100 !important;
+}
+
+tr, th, td {
+    border: 1px solid #fdc300;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.table__main-header {
+    letter-spacing: -1px;
+    font-size: 18px;
+    background-color: #ffd100 !important;
+}
+
+td {
+    text-align: center;
+    line-height: 1.1;
+}
+
+.table__checkmark {
+    width: 12px;
+    height: 12px;
+}
+
+.table__clarification {
+    font-size: 9px;
+    line-height: 0.5;
+}
+
+.table__sign {
+    font-size: 12px;
+    font-weight: 800;
+    padding: 5px;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.table__price {
+    font-size: 20px;
+}
+
+.table__wrapper-btn {
+    padding-top: 25px !important;
+}
+
+.table__btn {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 11px 15px;
+    border-radius: 3px;
+}
+
+.table__btn:hover {
+    background-color: #363535;
+}
+
+.table__btn:focus {
+    outline: none;
+    background-color: #363535;
+}
+
+/*----------block register with table--------*/
+
+/*------block books image--------*/
+
+.books img {
+    width: 100%;
+}
+
+/*------block books image--------*/
+
+/*--------block packs---------*/
+
+.packs {
+    margin-bottom: 60px;
+}
+
+.packs__title {
+    font-family: 'Oranienbaum', sans-serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.packs__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.packs__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 357px;
+    min-height: 510px;
+    border: 2px solid #e8e8e8;
+    padding: 35px;
+    transition: 0.3s;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.packs__item:hover {
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
+    border-color: #bfbfbf;
+}
+
+.packs__item-before-heading {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.packs__item-limitation {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.packs__item-time {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.packs__item-questions {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.packs__item-quantity {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.packs__item-wrapper-old-price {
+    display: flex;
+    justify-content: center;
+}
+
+.packs__item-old-price {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 22px;
+    color: #828481;
+    margin-bottom: 0;
+}
+
+.packs__item-old-price:before {
+    content: "";
+    border-bottom: 3px solid #e51c48;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    transform: rotate(-12deg);
+}
+
+.packs__item-new-price {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.packs__item-btn {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffe1e5;
+    background-color: #fe0b39;
+    width: 100%;
+    padding: 10px 0;
+    letter-spacing: -0.5px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.packs__item:hover .packs__item-btn:before {
+    content: '';
+    background-image: url("./../img/main/shopping-cart.svg");
+    background-size: 15px 13px;
+    width: 15px;
+    height: 13px;
+    position: absolute;
+    top: 14px;
+    left: 88px;
+}
+
+/*--------block packs---------*/
+
+/*----------block procedure-----------*/
+
+.procedure {
+    margin: 60px auto 0;
+    max-width: 660px;
+    padding: 0 10px;
+}
+
+.procedure__title {
+    font-family: 'Oranienbaum', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.procedure__wrapper-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.procedure__wrapper-img {
+    width: 200px;
+}
+
+.procedure__item-text {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1;
+    margin-left: 60px;
+}
+
+/*----------block procedure-----------*/
+
+/*-----------btn to top----------*/
+
+.to-top {
+    background-color: #000000;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+
+.to-top__btn {
+    position: relative;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 35px;
+    border: 1px solid #ffffff;
+}
+
+.to-top__btn:hover {
+    color: #ffffff;
+    background-color: #383737;
+    text-decoration: none;
+}
+
+.arrow {
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    bottom: auto;
+    width: 10px;
+    height: 10px;
+    border-top: 4px solid #ffffff;
+    border-right: 4px solid #ffffff
+}
+
+.arrow-top {
+    transform: rotate(-45deg)
+}
+
+
+/*-----------btn to top----------*/
+
+/*--------footer-------*/
+
+.footer {
+    background-color: #000000;
+    padding-bottom: 40px;
+}
+
+.footer__list {
+    padding-left: 1rem;
+}
+
+.footer__link {
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.footer__link:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*--------footer-------*/
+
+@media (max-width: 1145px) {
+
+    .packs__item:hover .packs__item-btn:before {
+        top: 14px;
+        left: 64px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .menu__item:not(:last-child) {
+        margin: 0 5px 0 0;
+    }
+
+    .table__price {
+        font-size: 16px;
+    }
+
+    .help:before {
+        left: -96px;
+        top: 20px;
+    }
+
+    .packs {
+        margin-bottom: 0;
+    }
+
+    .packs__wrapper {
+        flex-direction: column;
+    }
+
+    .packs__item {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 822px) {
+
+    .header__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__social {
+        padding: 0.5rem 1rem;
+    }
+
+    .header__phone {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .main__content {
+        padding: 457px 0 30px 15px;
+    }
+}
+
+@media (max-width: 520px) {
+    .procedure__wrapper-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .procedure__item-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+
+
